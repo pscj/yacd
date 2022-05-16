@@ -6,7 +6,6 @@ export function SectionNameType({ name, type }) {
   return (
     <h2 className={s.sectionNameType}>
       <span>{name}</span>
-      <span>{type}</span>
     </h2>
   );
 }

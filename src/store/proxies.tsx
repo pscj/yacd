@@ -361,9 +361,10 @@ function retrieveGroupNamesFrom(proxies: Record<string, ProxyItem>) {
   for (const prop in proxies) {
     const p = proxies[prop];
     if (p.all && Array.isArray(p.all)) {
-      groupNames.push(prop);
       if (prop === 'GLOBAL') {
         globalAll = p.all;
+      }else{
+        groupNames.push(prop);
       }
     } else if (NonProxyTypes.indexOf(p.type) < 0) {
       proxyNames.push(prop);
@@ -371,7 +372,7 @@ function retrieveGroupNamesFrom(proxies: Record<string, ProxyItem>) {
   }
   if (globalAll) {
     // Put GLOBAL in the end
-    globalAll.push('GLOBAL');
+    //globalAll.push('GLOBAL');
     // Sort groups according to its index in GLOBAL group
     groupNames = groupNames
       .map((name) => [globalAll.indexOf(name), name])

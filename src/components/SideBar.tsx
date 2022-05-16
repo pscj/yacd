@@ -50,29 +50,14 @@ interface SideBarRowProps {
 
 const pages = [
   {
-    to: '/',
-    iconId: 'activity',
-    labelText: 'Overview',
-  },
-  {
     to: '/proxies',
     iconId: 'globe',
     labelText: 'Proxies',
   },
   {
-    to: '/rules',
-    iconId: 'command',
-    labelText: 'Rules',
-  },
-  {
     to: '/connections',
     iconId: 'link',
     labelText: 'Conns',
-  },
-  {
-    to: '/configs',
-    iconId: 'settings',
-    labelText: 'Config',
   },
   {
     to: '/logs',
@@ -100,11 +85,11 @@ export default function SideBar() {
       </div>
       <div className={s.footer}>
         <ThemeSwitcher />
-        <Tooltip label={t('about')}>
+        {/* <Tooltip label={t('about')}>
           <Link to="/about" className={s.iconWrapper}>
             <Info size={20} />
           </Link>
-        </Tooltip>
+        </Tooltip> */}
       </div>
     </div>
   );

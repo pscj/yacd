@@ -150,7 +150,7 @@ export function updateCollapsibleIsOpen(prefix: string, name: string, v: boolean
 }
 
 const defaultClashAPIConfig = {
-  baseURL: document.getElementById('app')?.getAttribute('data-base-url') ?? 'http://127.0.0.1:9090',
+  baseURL: document.getElementById('app')?.getAttribute('data-base-url') ?? 'http://192.168.11.1:9090',
   secret: '',
   addedAt: 0
 };
@@ -161,7 +161,7 @@ const defaultState: StateApp = {
 
   latencyTestUrl: 'http://www.gstatic.com/generate_204',
   selectedChartStyleIndex: 0,
-  theme: 'dark',
+  theme: 'light',
 
   // type { [string]: boolean }
   collapsibleIsOpen: {},

@@ -33,13 +33,13 @@ const Proxies = lazy(() => import('./proxies/Proxies'));
 const Rules = lazy(() => import('./Rules'));
 
 const routes = [
-  { path: '/', element: <Home /> },
+  { path: '/', element: <Proxies /> },
   { path: '/connections', element: <Connections /> },
-  { path: '/configs', element: <Config /> },
+  //{ path: '/configs', element: <Config /> },
   { path: '/logs', element: <Logs /> },
   { path: '/proxies', element: <Proxies /> },
-  { path: '/rules', element: <Rules /> },
-  { path: '/about', element: <About /> },
+  //{ path: '/rules', element: <Rules /> },
+  //{ path: '/about', element: <About /> },
   process.env.NODE_ENV === 'development' ? { path: '/style', element: <StyleGuide /> } : false,
 ].filter(Boolean) as RouteObject[];
 
