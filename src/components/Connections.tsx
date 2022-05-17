@@ -167,7 +167,6 @@ function Conn({ apiConfig }) {
 
   return (
     <div>
-      <ContentHeader title={t('Connections')} />
       <Tabs>
         <div
           style={{

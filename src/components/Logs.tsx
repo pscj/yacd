@@ -75,7 +75,6 @@ function Logs({ dispatch, logLevel, apiConfig, logs, logStreamingPaused }) {
 
   return (
     <div>
-      <ContentHeader title={t('Logs')} />
       <LogSearch />
       <div ref={refLogsContainer} style={{ paddingBottom }}>
         {logs.length === 0 ? (

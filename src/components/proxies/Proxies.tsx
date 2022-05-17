@@ -81,19 +81,6 @@ function Proxies({
       >
         <Settings />
       </BaseModal>
-      <div className={s0.topBar}>
-        <ContentHeader title={t('Proxies')} />
-        <div className={s0.topBarRight}>
-          <div className={s0.textFilterContainer}>
-            <TextFilter textAtom={proxyFilterText} />
-          </div>
-          <Tooltip label={t('settings')}>
-            <Button kind="minimal" onClick={() => setIsSettingsModalOpen(true)}>
-              <Equalizer size={16} />
-            </Button>
-          </Tooltip>
-        </div>
-      </div>
       <div>
         {groupNames.map((groupName: string) => {
           return (
