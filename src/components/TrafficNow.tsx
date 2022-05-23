@@ -65,10 +65,10 @@ function useConnection(apiConfig) {
     connNumber: 0,
   });
   const read = useCallback(
-    ({ downloadTotal, uploadTotal, connections }) => {
+    ({ downloadTotal, proxydownloadTotal, uploadTotal, connections }) => {
       setState({
         upTotal: prettyBytes(uploadTotal),
-        dlTotal: prettyBytes(downloadTotal),
+        dlTotal: prettyBytes(proxydownloadTotal),
         connNumber: connections.length,
       });
     },

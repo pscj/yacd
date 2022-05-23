@@ -33,6 +33,7 @@ export type ConnectionItem = {
 };
 type ConnectionsData = {
   downloadTotal: number;
+  proxydownloadTotal: number;
   uploadTotal: number;
   connections: Array<ConnectionItem>;
 };

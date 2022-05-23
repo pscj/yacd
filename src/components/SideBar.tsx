@@ -50,6 +50,11 @@ interface SideBarRowProps {
 
 const pages = [
   {
+    to: '/',
+    iconId: 'activity',
+    labelText: 'Overview',
+  },
+  {
     to: '/proxies',
     iconId: 'globe',
     labelText: 'Proxies',

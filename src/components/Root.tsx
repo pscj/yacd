@@ -33,7 +33,7 @@ const Proxies = lazy(() => import('./proxies/Proxies'));
 const Rules = lazy(() => import('./Rules'));
 
 const routes = [
-  { path: '/', element: <Proxies /> },
+  { path: '/', element: <Home /> },
   { path: '/connections', element: <Connections /> },
   //{ path: '/configs', element: <Config /> },
   { path: '/logs', element: <Logs /> },
