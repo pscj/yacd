@@ -39,7 +39,7 @@ function renderCell(cell: { column: { id: string }; value: number }) {
   }
 }
 
-const sortById = { id: 'id', desc: true };
+const sortById = { id: 'chains', desc: false };
 const tableState = {
   sortBy: [
     // maintain a more stable order
