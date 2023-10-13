@@ -42,12 +42,13 @@ export async function requestDelayForProxy(
 }
 
 export async function fetchProviderProxies(config) {
-  const { url, init } = getURLAndInit(config);
+  /*const { url, init } = getURLAndInit(config);
   const res = await fetch(url + '/providers/proxies', init);
   if (res.status === 404) {
     return { providers: {} };
-  }
-  return await res.json();
+  }*/
+  return { providers: {} };
+  //return await res.json();
 }
 
 export async function updateProviderByName(config, name) {
